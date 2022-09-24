@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    background-image: url(../multimedia/background2.jpg);
+    background-repeat: repeat;
+    background-attachment:mixed;
+    background-position: center;
+}
+
+/* seleccionar hijo de */
+ section p{
+    font-size: 1em;
+    line-height: 1.6em;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+/* finalizar hijo de */
+
+/* seleccionar grupo */
+h1, h2, h3{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+/* finalizar grupo*/
+
+.texto-left{
+    text-align: left;
+    width: 50%;
+}
+
+.titulo-contacto{
+    font-weight:bold;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+
+form div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contacto{
+    padding-left: 0.5em;
+}
+
+/* seleccionar clase*/
+.text-blue{
+    color:black;
+    font-weight: bold;
+}
+
+.map{
+    padding-top: .5px;
+    padding-bottom: .5px;
+}
+
+/* comienza div */
+.anuncio-rgba{
+    text-align: center;
+    background-color:rgba(128, 128, 128, 0.438);    padding: 5px;
+    padding: 2px auto;
+    border-radius: 0.5rem;
+    margin: 5px;
+    border:double;    
+}
+
+.texto-anuncio{
+    font-weight:bold;
+    color:black;
+    margin: 6px 2px;
+}
+/* ends div */
+
+/* inicia nav */
+#nav{
+    background-color:rgba(128, 128, 128, 0.438); 
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+
+#nav ul{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+#nav ul li{
+    padding-right: 100px;
+}
+#nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size:larger;
+}
+
+/* boton hamburguesa */
+#nav svg{
+    fill: blue;
+}
+/* ends boton hamburguesa */
+
+/*ends nav*/
+
+    /* nav animacion*/
+.botonera ul li a{    
+    font: size 1.2em;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px ;
+    transition: background-size .3s;
+}
+
+/*hover*/
+.botonera ul li a:hover{
+    color:black;
+    font-weight: 600;
+    background-size: 100% 2px;
+}
+/* ends nav animacion */
+
+/* comienza titulo de bonitas-nails + spam */
+.tt{
+    font-weight:bold;
+    font-size:xx-large;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    padding: 10px auto;
+    margin: 5px;
+    border-radius: 0.5rem;
+}
+
+.titulo-central{
+    background-color:rgba(128, 128, 128, 0.438);
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    border: double;
+}
+
+.titulo-central:hover{
+    color: blueviolet;
+}
+
+.spam:hover{
+    color: white;
+}
+
+.cambio-de-color{
+    color:black;
+    font-size:x-small;
+    font-weight:bold;
+}
+/* ends titulo de bonitas-nails + spam */
+
+.pie{
+    text-align: center;
+}
+
+/*FLEX TRABAJOS*/
+.seccion{
+    display: flex;
+}
+
+#nuestros-trabajos h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.438);   
+    padding: 10px 10px;
+    border-radius: 2px;
+    border:black double;
+}
+
+#nuestros-trabajos h2{
+    text-align: center;
+    font-weight:bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nuestros-trabajos .seccion figure{
+    text-align:center;
+    background-color:rgba(128, 128, 128, 0.438);
+    padding: 10px 10px; 
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#nuestros-trabajos p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color:gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nuestros-trabajos button{
+    background-color: pink;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+/* ends trabajos */
+
+/* comienza productos */
+.novedades h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.438);  
+    padding: 10px 10px;
+    border-radius: 2px;
+    border: double;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor .galeria{
+    display: flex;
+}
+
+#contenedor .novedades{
+    padding:5px
+}
+
+#contenedor .galeria figure{
+    text-align:center;
+    background-color:rgba(128, 128, 128, 0.438);
+    padding: 10px 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#contenedor .galeria figure img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#contenedor .galeria figure figcaption{
+    font-size:larger;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 0;
+    background-color:rgba(128, 128, 128, 0.438);border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#contenedor .galeria p.precios{
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    background-color:rgba(128, 128, 128, 0.438);    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#contenedor .galeria button{
+    background-color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button:hover{
+    color: rgba(0, 110, 255, 0.87);
+}
+
+.novedades h1 p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 600px;
+    color: gray;
+}
+/*ends productos*/
+
+
+.p{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* comienza informacion */
+.flex-info{
+    display: flex;
+}
+
+.info-novedades p{
+    font-size: 1em;
+    line-height: 1.6em;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-novedades h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.438);    padding: 5px;
+    border-radius: 2px;
+    border:black double;
+}
+/* ends informacion */
+
+/* inicia nosotros */
+#nosotros-s h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.438);    
+    padding: 5px;
+    border-radius: 2px;
+    border:black double;
+}
+
+#nosotros-s p{
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-left: 5px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.galeria-f{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.438);   
+    padding-left: 5px;
+    border-radius: 2px;
+    border:ridge;
+}
+
+.card{
+    border:double;
+}
+
+.card h3{
+    background-color: pink;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* ends nosotros */
+
+#controlizq {
+    width: 25%;
+}
+
+#controlancho {
+    width: 100%;
+}
+
+/* comienza footer */
+#footer{
+    background-color:rgba(128, 128, 128, 0.438);   
+    text-align: center;
+    padding-left: 5px;
+    border-radius: 2px;
+    border:double;
+}
+
+#footer h2{
+    font-weight: bold;
+    padding: 5px;
+    font-size: large;
+}
+
+/* ends footer */
+
+#controlancho {
+    width: 100%;
+}
+
+/* comienza media query */
+@media (min-width:280px) and (max-width:320px){
+    #nav img[src="multimedia/logo-bonitas-nails.svg"]{
+        width: 140px;
+    }
+}
+
+@media (min-width:280px) and (max-width:320px){
+    #nav img[src="../multimedia/logo-bonitas-nails.svg"]{
+        width: 140px;
+    }
+}
+/* ends media query */
