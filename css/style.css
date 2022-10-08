@@ -20,7 +20,7 @@ body{
 h1, h2, h3{
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: bold;
 }
 /* finalizar grupo*/
 
@@ -30,9 +30,13 @@ h1, h2, h3{
 }
 
 .titulo-contacto{
-    font-weight:bold;
-    padding-top: 0.5em;
-    padding-left: 0.5em;
+    text-align: center;
+    background-color:rgba(128, 128, 128, 0.438);   
+    padding: 5px;
+    padding: 2px auto;
+    border-radius: 0.5rem;
+    margin: 5px;
+    border:double; 
 }
 
 form div{
@@ -41,24 +45,28 @@ form div{
 }
 
 #contacto{
-    padding-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
 }
 
 /* seleccionar clase*/
-.text-blue{
+.text-black{
     color:black;
     font-weight: bold;
 }
 
 .map{
-    padding-top: .5px;
-    padding-bottom: .5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* comienza div */
 .anuncio-rgba{
     text-align: center;
-    background-color:rgba(128, 128, 128, 0.438);    padding: 5px;
+    background-color:rgba(128, 128, 128, 0.438);   
+    padding: 5px;
     padding: 2px auto;
     border-radius: 0.5rem;
     margin: 5px;
@@ -68,7 +76,7 @@ form div{
 .texto-anuncio{
     font-weight:bold;
     color:black;
-    margin: 6px 2px;
+    margin: 5px 5px;
 }
 /* ends div */
 
@@ -109,7 +117,7 @@ form div{
 
     /* nav animacion*/
 .botonera ul li a{    
-    font: size 1.2em;
+    font-size: 1.2em;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -159,10 +167,6 @@ form div{
 }
 /* ends titulo de bonitas-nails + spam */
 
-.pie{
-    text-align: center;
-}
-
 /*FLEX TRABAJOS*/
 .seccion{
     display: flex;
@@ -182,12 +186,20 @@ form div{
     text-align: center;
     font-weight:bold;
     font-family: 'Roboto', sans-serif;
+    background-color:rgba(128, 128, 128, 0.438);   
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 5px;
+    border:ridge;
 }
 
 #nuestros-trabajos .seccion figure{
     text-align:center;
     background-color:rgba(128, 128, 128, 0.438);
-    padding: 10px 10px; 
+    padding-bottom: 5px;
+    margin: 2px; 
+    border: ridge;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
 
@@ -204,7 +216,7 @@ form div{
     background-color: pink;
     font-weight: bold;
     padding: 5px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 /* ends trabajos */
 
@@ -265,7 +277,7 @@ form div{
 }
 
 #contenedor .galeria button{
-    background-color: white;
+    background-color: pink;
     font-weight: bold;
     padding: 5px 20px;
     border-top-left-radius: 10px;
@@ -291,15 +303,9 @@ button:hover{
 }
 
 /* comienza informacion */
-.flex-info{
+.info{
     display: flex;
-}
-
-.info-novedades p{
-    font-size: 1em;
-    line-height: 1.6em;
-    color: gray;
-    font-family: 'Roboto', sans-serif;
+    padding: 30px;
 }
 
 .info-novedades h1{
@@ -355,34 +361,30 @@ button:hover{
 }
 /* ends nosotros */
 
-#controlizq {
-    width: 25%;
-}
-
-#controlancho {
-    width: 100%;
-}
-
 /* comienza footer */
 #footer{
     background-color:rgba(128, 128, 128, 0.438);   
     text-align: center;
-    padding-left: 5px;
-    border-radius: 2px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
     border:double;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer2{
+    display: flex;
 }
 
 #footer h2{
     font-weight: bold;
-    padding: 5px;
     font-size: large;
+    display: flex;
+    justify-content: center;
 }
 
 /* ends footer */
-
-#controlancho {
-    width: 100%;
-}
 
 /* comienza media query */
 @media (min-width:280px) and (max-width:320px){

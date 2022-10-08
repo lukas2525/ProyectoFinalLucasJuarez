@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- mi css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- inicia div -->
@@ -27,115 +27,121 @@
             <img src="multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="10"></rect>
-                <rect y="30" width="100" height="10"></rect>
-                <rect y="60" width="100" height="10"></rect>
-            </svg>
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                 <rect width="100" height="10"></rect>
+                 <rect y="30" width="100" height="10"></rect>
+                 <rect y="60" width="100" height="10"></rect>
+                </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="pages/productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="pages/trabajos.html">Trabajos</a>
-                </li>
-                <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="pages/informacion.html">Informacion</a>
-                </li>
-                <li class="nav-item">
-                 <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/informacion.html">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- ends nav -->
 
-        <div>     
-            <h1 class="tt titulo-central">BONITAS NAILS <span class="cambio-de-color spam">(by sol oriana)</span></h1>
-        </div> 
+    <div>     
+        <h1 class="tt titulo-central">BONITAS NAILS <span class="cambio-de-color spam">(by sol oriana)</span></h1>
+    </div> 
 
-        <!--inicia header-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="multimedia/uñas-esculpidas2.jpg" class="d-block w-100" alt="uñas esculpidas color mate">
-              </div>
-              <div class="carousel-item">
-                <img src="multimedia/uñas-kapping1.jpg" class="d-block w-100" alt="uñas kapping colores claros">
-              </div>
-              <div class="carousel-item">
-                <img src="multimedia/uñas-semipermanente1.jpeg" class="d-block w-100" alt="uñas semipermanetes colores rosa y blanco con detalles brillosos">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <!--inicia header-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <!--ends header-->
-    
-        <!--inicia main-->
-            <main class="novedades text-center">
-                <!--inicia contacto-->
-                    <div id="controlizq">
-                        <h3 class="titulo-contacto">Contacto</h3>
-                        <form action id="contacto">
-                            <div>
-                                <label for="name" class="text-blue">Nombre:</label>
-                                <input type="text" id="name" placeholder="Lucas Juarez">
-                            </div>
-                            <div>
-                                <label for="mail" class="text-blue">Email:</label>
-                                <input type="email" id="mail" placeholder="xxx@zzz.com">
-                            </div>
-                            <div>
-                                <label for="tel" class="text-blue">Telefono:</label>
-                                <input type="tel" id="tel" placeholder="12345678">
-                            </div>
-                            <div>
-                                <label for="mensaje" class="text-blue">Deja tu mensaje</label>
-                                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                            </div>
-                            <div>
-                                <input type="reset" value="cancelar">
-                                <input type="submit" value="enviar">
-                            </div>
-                        </form>
-                    </div>
-                <!--ends contacto-->
-            
-                    <!--inicia map-->
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9309410458372!2d-58.38810998519054!3d-34.73213507181029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd5a33e2c41b%3A0x6e01e2b3e66fec60!2sM.%20A.%20de%20Acevedo%202781%2C%20B1826FMT%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662158222827!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    <!--ends map-->
-            </main>
-        <!--end main-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="multimedia/uñas-esculpidas2.jpg" class="d-block w-100" alt="uñas esculpidas color mate">
+            </div>
+            <div class="carousel-item">
+            <img src="multimedia/uñas-kapping1.jpg" class="d-block w-100" alt="uñas kapping colores claros">
+            </div>
+            <div class="carousel-item">
+            <img src="multimedia/uñas-semipermanente1.jpeg" class="d-block w-100" alt="uñas semipermanetes colores rosa y blanco con detalles brillosos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--ends header-->
+
+    <!--inicia contacto-->
+    <div>
+        <h2 class="titulo-contacto">Contacto</h2>
+        <form action id="contacto">
+            <div>
+                <label for="name" class="text-black">Nombre:</label>
+                <input type="text" id="name" placeholder="Lucas Juarez">
+                </div>
+                <div>
+                <label for="mail" class="text-black">Email:</label>
+                <input type="email" id="mail" placeholder="xxx@zzz.com">
+            </div>
+            <div>
+                <label for="tel" class="text-black">Telefono:</label>
+                <input type="tel" id="tel" placeholder="12345678">
+            </div>
+            <div>
+                <label for="mensaje" class="text-black">Deja tu mensaje:</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="reset" value="cancelar" class="text-black">
+                <input type="submit" value="enviar" class="text-black">
+            </div>
+        </form>
+    </div>
+    <!--ends contacto-->
+
+    <!--inicia main-->
+    <main>
+        <!--inicia map-->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9309410458372!2d-58.38810998519054!3d-34.73213507181029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd5a33e2c41b%3A0x6e01e2b3e66fec60!2sM.%20A.%20de%20Acevedo%202781%2C%20B1826FMT%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662158222827!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        <!--ends map-->
+    </main>
+    <!--end main-->
 
     <!--inicia footer-->
-    <footer>
-        <div id="footer"> 
+    <footer id="footer">
+        <div>
+            <div id="footer2">
+                <a href="index.html">
+                 <img src="multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
+                </a>
+            </div>
+
             <h2>Seguinos en Nuestras Redes</h2>
             <a href="https://instagram.com" target="_blank">
-                <img src="multimedia/instagram.jpg" alt="Seguinos en instagram" class="pie__icon--sm" height="50" width="50">
+               <img src="multimedia/instagram.jpg" alt="Seguinos en instagram" height="50" width="50">
             </a>
             <a href="https://facebook.com" target="_blank">
-                <img src="multimedia/facebook.png" alt="Seguinos en facebook" class="pie__icon--sm" height="50" width="50" >
+                <img src="multimedia/facebook.png" alt="Seguinos en facebook "height="50" width="50" >
             </a>
             <a href="https://twiter.com" target="_blank">
-                <img src="multimedia/twitter.jpg" alt="Seguinos en twitter" class="pie__icon--sm" height="50" width="50">
+                <img src="multimedia/twitter.jpg" alt="Seguinos en twitter "height="50" width="50">
             </a>
         </div>
    </footer>

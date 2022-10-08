@@ -6,212 +6,371 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonitas Nails</title>
     <link rel="shortcut icon" href="../multimedia/fabicon.jpg" type="image/x-icon">
+    <!-- css bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- mi css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-        <!-- inicia div -->
-            <div class="anuncio-rgba">
-                <p class="texto-anuncio">Contactos al: 1132596341</p>
-            </div>
-        <!-- termina div -->
+  <!-- inicia div -->
+      <div class="anuncio-rgba">
+          <p class="texto-anuncio">Contactos al: 1132596341</p>
+      </div>
+  <!-- termina div -->
 
-        <!-- inicia nav  -->
-        <nav id="nav" class="botonera anuncio-rgba">
-            <a href="../index.html">
-             <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">       
-            </a>
-               <ul>
-                   <li>
-                       <a href="productos.html">Productos</a>
-                   </li>
-                   <li>
-                       <a href="trabajos.html">Trabajos</a>
-                   </li>
-                   <li>
-                       <a href="informacion.html">Informacion</a>
-                   </li>
-                   <li>
-                       <a href="nosotros.html">Nosotros</a>
-                   </li>
-              </ul>
-           </nav>
-        <!--ends nav--> 
+  <!-- inicia nav  -->
+  <nav class="navbar navbar-expand-lg botonera anuncio-rgba" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="trabajos.html">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="informacion.html">Informacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--ends nav--> 
 
-    <!--inicia main contenido principal-->
+  <!--inicia main contenido principal-->
     <main id="contenedor" class="novedades">
-        <h1 class="tt">Nuestros productos</h1>
-        <!--inicia seccion 1 -->
-        <section class="galeria">
-            <figure>
-                <img src="../multimedia/lima-curva-paris.png" width="75%" alt="lima curva de color gris profesional">
-                <figcaption>Lima curva gris por Unidad</figcaption>
-                <p class="precios">$150</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/lima-sk.png" width="75%%" alt="pincel para uñas profesional">
-                <figcaption>Lima Paris x 12uni</figcaption>
-                <p class="precios">$1.450</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/pincel-avellanado-8medi-paris.jpeg" width="75%" alt="Cabina para uñas">
-                <figcaption>Pincel uñas Avellanado Paris #8</figcaption>
-                <p class="precios">$500</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/pincel-lengua-de-gato-medi6-paris.jpeg" width="75%" alt="Cabina para uñas">
-                <figcaption>Pincel Lengua de Gato Paris #6</figcaption>
-                <p class="precios">$400</p>
-                <button>Agregar</button>
-            </figure>
-        </section>
-        <!--ends seccion 1 -->
-
-        <!--inicia seccion 2 -->
-        <section class="galeria">
-            <figure>
-                <img src="../multimedia/cabina-figo.png" width="75%" alt="lima curva de color gris profesional">
-                <figcaption>Cabina Figo 85W</figcaption>
-                <p class="precios">$6.800</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/cabina-spa-teknipro.jpeg" width="75%%" alt="pincel para uñas profesional">
-                <figcaption>Cabina Teknikpro 54W</figcaption>
-                <p class="precios">$6.900</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/cabina-sirena.png" width="75%" alt="Cabina para uñas">
-                <figcaption>Cabina Sirena 7ma Paris Night 72W led</figcaption>
-                <p class="precios">$10.500</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/cabina-sunx5-max.jpeg" width="75%" alt="Cabina para uñas">
-                <figcaption>Cabina Sunk5 Max 120W</figcaption>
-                <p class="precios">$6.775</p>
-                <button>Agregar</button>
-            </figure>
-        </section>
-        <!--ends seccion 2 -->
-
-        <!--inicia seccion 3 -->
-        <section class="galeria">
-            <figure>
-                <img src="../multimedia/torno-meline.png" width="75%" alt="lima curva de color gris profesional">
-                <figcaption>Torno Meline 30mil rpm</figcaption>
-                <p class="precios">$14.800</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/torno-teknipro-perfect.jpeg" width="75%%" alt="pincel para uñas profesional">
-                <figcaption>Torno Teknikpro perfect drill 40mil rpm</figcaption>
-                <p class="precios">$20.990</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/rollo-moldes-rectangulares.jpg" width="75%" alt="Cabina para uñas">
-                <figcaption>Rollo moldes rectangulares 500 unidades</figcaption>
-                <p class="precios">$900</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/rollo-moldes-supernails.jpeg" width="75%" alt="Cabina para uñas">
-                <figcaption>Rollo moldes tipo supernails 500 unidades</figcaption>
-                <p class="precios">$2.100</p>
-                <button>Agregar</button>
-            </figure>
-        </section>
-        <!--ends seccion 3 -->
-
-        <!--inicia seccion 4 -->
-        <section class="galeria">
-            <figure>
-                <img src="../multimedia/charm-limit.jpeg" width="75%" alt="lima curva de color gris profesional">
-                <figcaption>Charm limit 15 ml B</figcaption>
-                <p class="precios">$650</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/charm-limit2.jpeg" width="75%%" alt="pincel para uñas profesional">
-                <figcaption>Charm limit 15 ml I</figcaption>
-                <p class="precios">$650</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/combo-meline.png" width="75%" alt="Cabina para uñas">
-                <figcaption>Combo meline 6 unidades colores a eleccion</figcaption>
-                <p class="precios">$8.990</p>
-                <button>Agregar</button>
-            </figure>
-
-            <figure>
-                <img src="../multimedia/crema-humectante-nail-show.png" width="75%" alt="Cabina para uñas">
-                <figcaption>Crema humectante nailshow 240ml</figcaption>
-                <p class="precios">$790</p>
-                <button>Agregar</button>
-            </figure>
-        </section>
-        <!--ends seccion 4 -->
-    
-
-        <div id="controlizq">
-            <h2 class="titulo-contacto">Contacto</h2>
-            <form action= ""id="contacto">
-                <div>
-                    <label for="name" class="text-blue">Nombre:</label>
-                    <input type="text" id="name" placeholder="Lucas Juarez">
+      <h1 class="tt">Nuestros productos</h1>
+      <section class="py-3 container-fluid galeria">
+        <div class="row">
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/lima-curva-paris.png" class="img-fluid rounded-start"  width="100%" alt="lima curva de color gris profesional">
                 </div>
-                <div>
-                    <label for="mail" class="text-blue">Email:</label>
-                    <input type="email" id="mail" placeholder="xxx@zzz.com">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$150</p>
+                    <figcaption>Lima curva gris por Unidad</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
                 </div>
-                <div>
-                    <label for="tel" class="text-blue">Telefono:</label>
-                    <input type="tel" id="tel" placeholder="12345678">
+              </div>
+            </div>
+          </article>
+          <!--ends card 1  -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+              <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../multimedia/lima-sk.png" class="img-fluid rounded-start"  width="100%" alt="lima curva de color gris profesional">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-text nosotros-s precios">$1.450</p>
+                        <figcaption>Lima Paris x 12unidades</figcaption>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <button>Agregar</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                    <label for="mensaje" class="text-blue">Deja tu mensaje</label>
-                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+          </article>
+          <!--ends card 2 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                 <img src="../multimedia/pincel-avellanado-8medi-paris.jpeg" class="img-fluid rounded-start"  width="100%" alt="pincel para uñas profesional">
                 </div>
-                <div>
-                    <input type="reset" value="cancelar">
-                    <input type="submit" value="enviar">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$500</p>
+                    <figcaption>Pincel uñas Avellanado Paris #8</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
                 </div>
-            </form>
+              </div>
+            </div>
+          </article>
+          <!--ends card 3 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/pincel-lengua-de-gato-medi6-paris.jpeg" class="img-fluid rounded-start"  width="100%" alt="pincel para uñas profesional">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$400</p>
+                    <figcaption>Pincel Lengua de Gato Paris #6</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 4 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/cabina-figo.png" class="img-fluid rounded-start"  width="100%" alt="Cabina para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$6.800</p>
+                    <figcaption>Cabina Figo 85W</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 5 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/cabina-spa-teknipro.jpeg" class="img-fluid rounded-start"  width="100%" alt="Cabina para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$6.900</p>
+                    <figcaption>Cabina Teknikpro 54W</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 6 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/cabina-sirena.png" class="img-fluid rounded-start"  width="100%" alt="Cabina para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$10.500</p>
+                    <figcaption>Cabina Sirena 7ma Paris 72W led</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 7 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/cabina-sunx5-max.jpeg" class="img-fluid rounded-start"  width="100%" alt="Cabina para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$6.775</p>
+                    <figcaption>Cabina Sunk5 Max 120W</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 8-->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/torno-meline.png" class="img-fluid rounded-start"  width="100%" alt="Torno para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$14.800</p>
+                    <figcaption>Torno Meline 30 mil Rpm</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 9-->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/torno-teknipro-perfect.jpeg" class="img-fluid rounded-start"  width="100%" alt="Torno para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$20.990</p>
+                    <figcaption>Torno Teknikpro pro 40 mil Rpm</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 10 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/rollo-moldes-rectangulares.jpg" class="img-fluid rounded-start"  width="100%" alt="Moldes para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$900</p>
+                    <figcaption>Rollo moldes rectang 500 unid</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 11 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../multimedia/rollo-moldes-supernails.jpeg" class="img-fluid rounded-start"  width="100%" alt="Roloos para uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$2.100</p>
+                    <figcaption>Rollo moldes supernails 500 unid</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 12 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/charm-limit.jpeg" class="img-fluid rounded-start"  width="100%" alt="Esmalte para pintar uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$650</p>
+                    <figcaption>Charm limit 15 ml B</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 13 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/charm-limit2.jpeg" class="img-fluid rounded-start"  width="100%" alt="Esmalte para pintar uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$650</p>
+                    <figcaption>Charm limit 15 ml I</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--ends card 14 -->
+
+          <article class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../multimedia/combo-meline.png" class="img-fluid rounded-start"  width="100%" alt="Esmalte para pintar uñas">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text nosotros-s precios">$8.990</p>
+                    <figcaption>Combo meline 6 unid a eleccion</figcaption>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                    <button>Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+         <!--ends card 15 -->
         </div>
-    </main>
-    <!--end main contenido principal-->  
+      </section>
+    </main>        
+  <!--end main contenido principal-->  
      
-    <!--inicia footer-->
-    <footer>
-        <div id="footer"> 
-            <h2>Seguinos en Nuestras Redes</h2>
-            <a href="https://instagram.com" target="_blank">
-                <img src="../multimedia/instagram.jpg" alt="Seguinos en instagram" class="pie__icon--sm" height="50" width="50" >
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <img src="../multimedia/facebook.png" alt="Seguinos en facebook" class="pie__icon--sm" height="50" width="50" >
-            </a>
-            <a href="https://twiter.com" target="_blank">
-                <img src="../multimedia/twitter.jpg" alt="Seguinos en twitter" class="pie__icon--sm" height="50" width="50">
-            </a>
+  <!--inicia footer-->
+    <footer id="footer">
+      <div> 
+        <div id="footer2">
+          <a href="../index.html">
+            <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
+          </a>
         </div>
+
+        <h2>Seguinos en Nuestras Redes</h2>
+          <a href="https://instagram.com" target="_blank">
+            <img src="../multimedia/instagram.jpg" alt="Seguinos en instagram" class="pie__icon--sm" height="50" width="50" >
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="../multimedia/facebook.png" alt="Seguinos en facebook" class="pie__icon--sm" height="50" width="50" >
+          </a>
+          <a href="https://twiter.com" target="_blank">
+            <img src="../multimedia/twitter.jpg" alt="Seguinos en twitter" class="pie__icon--sm" height="50" width="50">
+          </a>
+      </div>
     </footer>
-    <!--ends footer-->
+  <!--ends footer-->
+
+  <!-- js y bs -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <!-- ends js y bs -->
 </body>
 </html>

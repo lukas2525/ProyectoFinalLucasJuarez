@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonitas Nails</title>
     <link rel="shortcut icon" href="../multimedia/fabicon.jpg" type="image/x-icon">
+
+    <!-- css bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- mi css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -15,71 +20,80 @@
     </div>
     <!-- termina div -->
 
-    <!--inicia nav-->
-    <nav id="nav" class="botonera anuncio-rgba">
-        <a href="../index.html">
-           <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">       
-        </a>
-        <ul>
-            <li>
-                <a href="productos.html">Productos</a>
-            </li>
-             <li>
-                <a href="trabajos.html">Trabajos</a>
-            </li>
-             <li>
-                <a href="informacion.html">Informacion</a>
-            </li>
-             <li>
-                <a href="nosotros.html">Nosotros</a>
-            </li>
-        </ul>
+    <!-- inicia nav  -->
+    <nav class="navbar navbar-expand-lg botonera anuncio-rgba" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+             <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                 <rect width="100" height="10"></rect>
+                 <rect y="30" width="100" height="10"></rect>
+                 <rect y="60" width="100" height="10"></rect>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="informacion.html">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!--ends nav--> 
+    <!-- ends nav -->
 
     <!--inicia header-->
-        <header class="info-novedades">
-            <h1 class="tt">Informacion</h1>
-            <section class="flex-info">
-                <div>
-                    <img src="../multimedia/informacion-jpg.jpg " width="85%" alt="informacion importante">  
-                </div>  
+    <header class="info-novedades">
+        <h1 class="tt">Informacion</h1>
+        <section class="info">
+            <img src="../multimedia/informacion-jpg.jpg" class="rounded mx-auto d-row" width="25%" alt="informacion a cliente">
+            <img src="../multimedia/informacion softgel-jpg.jpg" class="rounded mx-auto d-row" width="25%" alt="informacion a cliente">   
+        </section>
+    
 
-                <div>
-                    <img src="../multimedia/informacion softgel-jpg.jpg" width="85%" alt="informacion importante">
-                </div>
-                <div>
-                    <img src="../multimedia/clientes-vip.jpg" width="75%" alt="informacion importante">
-                </div>
-                <div>
-                    <img src="../multimedia/clientes-vip1.jpg" width="75%" alt="informacion importante">
-                </div>
-            </section>
-        </header>
+        <section class="info">
+            <img src="../multimedia/clientes-vip.jpg" class="rounded mx-auto d-row" width="25%" alt="informacion a clientes">
+            <img src="../multimedia/clientes-vip1.jpg" class="rounded mx-auto d-row" width="25%" alt="informacion a clientes">
+        </section>
+    </header>
     <!--ends header-->
-
-    <!--inicia main-->
-    <main>
-        <section></section>
-        <section></section>
-    </main>
-    <!--end main-->
      
     <!--inicia footer-->
-    <footer>
-        <div id="footer"> 
+    <footer id="footer">
+        <div>
+            <div id="footer2">
+                <a href="../index.html">
+                 <img src="../multimedia/logo-bonitas-nails.svg" alt="Logo Bonitas Nails" height="100" width="100">
+                </a>
+            </div>
+
             <h2>Seguinos en Nuestras Redes</h2>
-             <a href="https://instagram.com" target="_blank">
-              <img src="../multimedia/instagram.jpg" alt="Seguinos en instagram" class="pie__icon--sm" height="50" width="50" >
+            <a href="https://instagram.com" target="_blank">
+             <img src="../multimedia/instagram.jpg" alt="Seguinos en instagram" class="pie__icon--sm" height="50" width="50" >
             </a>
             <a href="https://facebook.com" target="_blank">
-              <img src="../multimedia/facebook.png" alt="Seguinos en facebook" class="pie__icon--sm" height="50" width="50" >
+             <img src="../multimedia/facebook.png" alt="Seguinos en facebook" class="pie__icon--sm" height="50" width="50" >
             </a>
             <a href="https://twiter.com" target="_blank">
-              <img src="../multimedia/twitter.jpg" alt="Seguinos en twitter" class="pie__icon--sm" height="50" width="50">
+             <img src="../multimedia/twitter.jpg" alt="Seguinos en twitter" class="pie__icon--sm" height="50" width="50">
             </a>
         </div>
- </footer>  
-     <!--ends footer-->
+    </footer>  
+    <!--ends footer-->
+         
+    <!-- js y bs -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- ends js y bs -->
 </body>
 </html>

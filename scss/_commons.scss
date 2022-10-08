@@ -1,0 +1,324 @@
+body{
+    background-image: url(../multimedia/background2.jpg);
+    background-repeat: repeat;
+    background-attachment:mixed;
+    background-position: center;
+}
+
+.anuncio-rgba{
+    text-align: $text;
+    background-color:$mainColor;   
+    padding: $paddingMd;
+    padding: $paddingSm $paddingAu;
+    border-radius: $borderR;
+    margin: $marginMd;
+    border:$borderDo; 
+}
+
+p{
+    color:$secundaryColor;
+    font-weight: $fontWe;
+
+    .texto-anucio{
+        font-weight:$fontWe;
+        color:$secundaryColor;
+        margin: $marginMd $marginMd;
+    }
+}
+
+//div
+h1 h2 h3{
+    color: $secundaryColor;
+    font-family: $fontRo;
+    font-weight:$fontWe;
+}
+.tt{
+    font-weight:$fontWe;
+    font-size:$fontXxl;
+    text-align: $text;
+    letter-spacing: 0.3rem;
+    padding: $paddingLg $paddingAu;
+    margin: $marginMd;
+    border-radius:$borderR;
+}
+
+.titulo-central{
+    background-color:$mainColor;
+    padding: $paddingLg $paddingLg;
+    border-radius:$borderR;
+    border: $borderDo;
+    &:hover{
+        color: $otroColor;
+    }
+
+}
+
+.spam{
+    &:hover{
+        color: $otroColor1;
+    }  
+}
+
+.cambio-de-color{
+    color: $secundaryColor;
+    font-size: $fontSm;
+    font-weight: $fontWe;
+}
+//div
+
+//contacto
+
+h2{
+    font-weight: $fontWe;
+    text-align: $text; 
+    padding: $paddingMd;
+    padding: $paddingSm $paddingAu;
+    border-radius: $borderR;
+    margin: $marginMd;
+}
+
+.titulo-contacto{
+    text-align: $text;
+    background-color:$mainColor;   
+    padding: $paddingMd;
+    padding: $paddingSm $paddingAu;
+    border-radius: $borderR;
+    margin: $marginMd;
+    border:$borderDo; 
+}
+
+form div{
+    margin-top: $marginMd;
+    margin-bottom: $marginMd;
+    .text-black{
+        color:$secundaryColor;
+        font-weight:$fontWe;
+    }
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: $text;
+    padding-top: $marginMd;
+}
+
+div{
+    .map{
+        padding-top: $paddingLg;
+        padding-bottom: $paddingLg;
+    }
+}
+
+#footer{
+    background-color:$mainColor;   
+    text-align: $text;
+    padding-left: $paddingLg;
+    padding-top: $paddingLg;
+    border-radius: $borderRmd;
+    border:$borderDo;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-weight: $fontWe;
+        font-size: $fontSi;
+        display: flex;
+        justify-content: $text;
+    }
+}
+
+#footer2{
+    display: flex;
+}
+
+//productos
+.novedades h1{
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    background-color:$mainColor;  
+    padding: $paddingLg $paddingLg;
+    border-radius: $borderRlg;
+    border: $borderDo;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    .galeria{
+        display: flex;
+        p.precios{
+            color: $secundaryColor;
+            font-size: $fontSi;
+            font-weight: $fontWei;
+            background-color:$mainColor;   
+            padding: $paddingMd;
+            border-top-left-radius: $borderXl;
+            border-bottom-right-radius: $borderXl;
+        }
+        button{
+            background-color: $otroColor2;
+            font-weight: $fontWe;
+            padding: $paddingMd $paddingMd;
+            border-top-left-radius: $borderXl;
+            border-bottom-right-radius: $borderXl;
+            &:hover{
+                color: $otroColor3;
+            }
+        }
+    }
+
+    .novedades{
+        padding: $paddingMd;
+        h1 p{
+            font-family: $fontRo;
+            text-align: $text;
+            font-weight: $fontMd;
+            color: $keyColor;
+        }
+    }
+    .galeria figure{
+        text-align:$text;
+        background-color:$mainColor;
+        padding: $paddingLg $paddingLg;
+        border-bottom-left-radius: $borderRmd;
+        border-top-right-radius: $borderRmd;
+        img{
+            border-top-left-radius: $borderRmd;
+            border-top-right-radius: $borderRmd;
+        }
+        figcaption{
+            font-size:$fontSi;
+            color: $secundaryColor;
+            font-weight: $fontWei;
+            padding: $paddingLg;
+            background-color:$mainColor;
+            border-top-left-radius: $borderXl;
+            border-bottom-right-radius: $borderXl;
+        }
+    }
+
+}
+//trabajos
+
+.seccion{
+    display: flex;
+    figure{
+    text-align:$text;
+    background-color:$mainColor;
+    padding-bottom: $paddingMd;
+    margin: $marginSm; 
+    border: $borderRid;
+    border-bottom-left-radius: $borderRmd;
+    border-top-right-radius: $borderRmd;
+
+    }
+}
+
+#nuestros-trabajos h1{
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    background-color:$mainColor;   
+    padding: $paddingLg $paddingLg;
+    border-radius: $borderRlg;
+    border:$secundaryColor $borderDo;
+    h2{
+    text-align: $text;
+    font-weight:$fontWe;
+    font-family: $fontRo;
+    background-color:$mainColor;   
+    padding-left: $paddingLg;
+    border-top-right-radius: $borderXl;
+    border-bottom-left-radius: $borderXl;
+    margin: $marginMd;
+    border:$borderRid;
+    p{
+    font-size: $fontSmd;
+    line-height: 1.5em;
+    color:$keyColor;
+    font-family:$fontRo;
+    }
+    button{
+        background-color: $otroColor2;
+        font-weight: $fontWe;
+        padding: $paddingMd $paddingLg;
+        border-radius: $borderXl;
+    }
+    }
+}
+
+//informacion
+
+.info{
+    display: flex;
+    padding: $paddingXl;
+}
+.info-novedades h1{
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    background-color:$mainColor;   
+    padding: $paddingMd;
+    border-radius:$borderRlg;
+    border:$secundaryColor $borderDo;
+    .tt{
+    font-weight:$fontWe;
+    font-size:$fontXxl;
+    text-align: $text;
+    letter-spacing: 0.3rem;
+    padding: $paddingLg $paddingAu;
+    margin: $marginMd;
+    border-radius: $borderR;
+    }
+}
+
+//nosotros
+
+#nosotros-s h1{
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    background-color:$mainColor;    
+    padding: $paddingMd;
+    border-radius: $borderRlg;
+    border:$secundaryColor $borderDo;
+    .tt{
+    font-weight:$fontWe;
+    font-size:$fontXxl;
+    text-align: $text;
+    letter-spacing: 0.3rem;
+    padding: $paddingLg $paddingAu;
+    margin: $marginMd;
+    border-radius: $borderR;
+    }
+    p{
+    font-size: $fontSmd;
+    line-height: 1.6em;
+    padding-left: $paddingMd;
+    color: $keyColor;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    text-align: $text;
+    }
+}
+
+h2 .galeria-f{
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight:$fontWe;
+    background-color:$mainColor;   
+    padding-left: $paddingMd;
+    border-radius: $borderRlg;
+    border:$borderRid;
+}
+
+.card{
+    border: $borderDo;
+    h3{
+    background-color: $otroColor2;
+    text-align: $text;
+    border-top-left-radius: $borderRmd;
+    border-bottom-right-radius: $borderRmd;
+    }
+}

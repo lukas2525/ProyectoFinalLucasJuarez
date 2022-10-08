@@ -1,0 +1,52 @@
+#nav{
+    background-color: $mainColor;
+    padding: $paddingMd $paddingMd;
+    margin: $marginMd;
+    border-radius: $borderR;
+    display:flex;
+    justify-content:flex-start;
+    align-items: $text;
+    img{
+        width: 150px;
+        @media(min-width:280px) and (max-width:320px){
+            #nav img[src="multimedia/logo-bonitas-nails.svg"]{
+                width: 140px;
+            }
+            
+            @media (min-width:280px) and (max-width:320px){
+                #nav img[src="../multimedia/logo-bonitas-nails.svg"]{
+                    width: 140px;
+                }
+            }
+        }
+    }
+    ul{
+        list-style: none;
+        font-family: $fontRo;
+        display: flex;
+        justify-content:$text;
+        li{
+            padding: $paddingMd;
+            a{
+                color: $secundaryColor;
+                text-decoration: none;
+                font-weight: $fontWe;
+                font-family: $fontRo;
+                font-size: $fontSi;
+                &:hover{
+                    color:  blue;
+                }
+                font-size: 1.2em;
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px ;
+                transition: background-size .3s;
+                &:hover{
+                    color: $secundaryColor;
+                    font-weight:$fontMd;
+                    background-size: 100% 2px;
+                }
+}   }   }   }
+
