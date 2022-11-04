@@ -1,125 +1,148 @@
-body{
+body {
     background-image: url(../multimedia/background2.jpg);
     background-repeat: repeat;
-    background-attachment:mixed;
+    background-attachment: mixed;
     background-position: center;
 }
 
-.anuncio-rgba{
+.anuncio-rgba {
     text-align: $text;
-    background-color:$mainColor;   
+    background-color: $mainColor;
     padding: $paddingMd;
     padding: $paddingSm $paddingAu;
     border-radius: $borderR;
     margin: $marginMd;
-    border:$borderDo; 
-}
+    border: $borderDo;
 
-p{
-    color:$secundaryColor;
-    font-weight: $fontWe;
-
-    .texto-anucio{
-        font-weight:$fontWe;
-        color:$secundaryColor;
-        margin: $marginMd $marginMd;
+    p { 
+    color: $keyColor;
+    font-weight: $fontRo;
+    font-size:$fontSma;
+    margin: $marginMd $marginMd;
     }
 }
 
-//div
-h1 h2 h3{
-    color: $secundaryColor;
-    font-family: $fontRo;
-    font-weight:$fontWe;
+#flex{
+    display: flex;
+    justify-content: start
 }
-.tt{
-    font-weight:$fontWe;
-    font-size:$fontXxl;
+
+//div
+
+.tt {
+    font-weight: $fontWe;
+    font-size: $fontXxl;
     text-align: $text;
     letter-spacing: 0.3rem;
     padding: $paddingLg $paddingAu;
     margin: $marginMd;
-    border-radius:$borderR;
+    border-radius: $borderR;
 }
 
-.titulo-central{
-    background-color:$mainColor;
+.titulo-central {
+    background-color: $mainColor;
     padding: $paddingLg $paddingLg;
-    border-radius:$borderR;
+    border-radius: $borderR;
     border: $borderDo;
-    &:hover{
+
+    &:hover {
         color: $otroColor;
     }
 
 }
 
-.spam{
-    &:hover{
+.spam {
+    &:hover {
         color: $otroColor1;
-    }  
+    }
 }
 
-.cambio-de-color{
+.cambio-de-color {
     color: $secundaryColor;
     font-size: $fontSm;
     font-weight: $fontWe;
 }
+
 //div
 
 //contacto
 
-h2{
-    font-weight: $fontWe;
-    text-align: $text; 
-    padding: $paddingMd;
-    padding: $paddingSm $paddingAu;
-    border-radius: $borderR;
-    margin: $marginMd;
-}
-
-.titulo-contacto{
+.titulo-contacto {
     text-align: $text;
-    background-color:$mainColor;   
+    background-color: $mainColor;
     padding: $paddingMd;
     padding: $paddingSm $paddingAu;
     border-radius: $borderR;
     margin: $marginMd;
-    border:$borderDo; 
+    border: $borderDo;
 }
 
-form div{
-    margin-top: $marginMd;
-    margin-bottom: $marginMd;
-    .text-black{
-        color:$secundaryColor;
-        font-weight:$fontWe;
+form{
+    width: 450px;
+    margin: $marginAu;
+    background: $specialColor;
+    padding: $paddingLg $paddingLgg;
+    margin-bottom: $marginXl;
+    box-sizing: border-box;
+    margin-top: $marginXl;
+    border-radius: $borderRmd;
+    label{
+        font-size: $fontMd;
+        display: block;
+        width: 100%;
+    }
+    .label-black{
+        font-weight: $fontWe;
+    }
+    input,textarea{
+        width: 100%;
+        margin-top: $marginMd;
+        margin-bottom: $marginXl;
+        padding: $paddingMd;
+        box-sizing: border-box;
+        font-size: $fontSi;
+    }
+    textarea{
+        resize: vertical;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    #btn{
+        background: $mainColor;
+        color: $secundaryColor;
+        font-weight: $fontWe;
+        padding: $paddingMd;
+        &:hover{
+            color: $otroColor;
+        }
     }
 }
-
-#contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: $text;
-    padding-top: $marginMd;
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
 }
+//end contacto
 
-div{
-    .map{
+div {
+    .map {
         padding-top: $paddingLg;
         padding-bottom: $paddingLg;
     }
 }
 
-#footer{
-    background-color:$mainColor;   
+#footer {
+    background-color: $mainColor;
     text-align: $text;
     padding-left: $paddingLg;
     padding-top: $paddingLg;
     border-radius: $borderRmd;
-    border:$borderDo;
+    border: $borderDo;
     display: flex;
     flex-direction: column;
-    h2{
+    margin: $marginMd;
+
+    h2 {
         font-weight: $fontWe;
         font-size: $fontSi;
         display: flex;
@@ -127,198 +150,199 @@ div{
     }
 }
 
-#footer2{
+#footer2 {
     display: flex;
 }
 
 //productos
-.novedades h1{
+.novedades h1 {
     text-align: $text;
     font-family: $fontRo;
     font-weight: $fontWe;
-    background-color:$mainColor;  
+    background-color: $mainColor;
     padding: $paddingLg $paddingLg;
-    border-radius: $borderRlg;
+    border-radius: $borderR;
     border: $borderDo;
 }
 
-#contenedor{
+#contenedor {
     display: flex;
     flex-direction: column;
-    .galeria{
+    .galeria {
         display: flex;
-        p.precios{
+        p.precios {
             color: $secundaryColor;
             font-size: $fontSi;
             font-weight: $fontWei;
-            background-color:$mainColor;   
+            background-color: $mainColor;
             padding: $paddingMd;
             border-top-left-radius: $borderXl;
             border-bottom-right-radius: $borderXl;
         }
-        button{
+        figcaption {
+            font-size: $fontMd;
+            color: $secundaryColor;
+            font-weight: $fontMd;
+            padding: $paddingSm;
+        }
+        button {
             background-color: $otroColor2;
             font-weight: $fontWe;
             padding: $paddingMd $paddingMd;
-            border-top-left-radius: $borderXl;
-            border-bottom-right-radius: $borderXl;
-            &:hover{
-                color: $otroColor3;
+
+            &:hover {
+                color: $otroColor;
             }
         }
     }
-
-    .novedades{
-        padding: $paddingMd;
-        h1 p{
-            font-family: $fontRo;
-            text-align: $text;
-            font-weight: $fontMd;
-            color: $keyColor;
-        }
-    }
-    .galeria figure{
-        text-align:$text;
-        background-color:$mainColor;
-        padding: $paddingLg $paddingLg;
-        border-bottom-left-radius: $borderRmd;
-        border-top-right-radius: $borderRmd;
-        img{
-            border-top-left-radius: $borderRmd;
-            border-top-right-radius: $borderRmd;
-        }
-        figcaption{
-            font-size:$fontSi;
-            color: $secundaryColor;
-            font-weight: $fontWei;
-            padding: $paddingLg;
-            background-color:$mainColor;
-            border-top-left-radius: $borderXl;
-            border-bottom-right-radius: $borderXl;
-        }
-    }
-
 }
+
 //trabajos
 
-.seccion{
-    display: flex;
-    figure{
-    text-align:$text;
-    background-color:$mainColor;
-    padding-bottom: $paddingMd;
-    margin: $marginSm; 
-    border: $borderRid;
-    border-bottom-left-radius: $borderRmd;
-    border-top-right-radius: $borderRmd;
-
+#nuestros-trabajos{
+    h1{
+        background-color: $mainColor;
+        text-align: $text;
+        font-family: $fontRo;
+        font-weight: $fontWe;
+        padding: $paddingLg $paddingLg;
+        border-radius: $borderR;
+        border: $borderDo;
     }
 }
-
-#nuestros-trabajos h1{
-    text-align: $text;
+.card-smd{
+    font-size: $fontSmd;
+}
+.p-letters{
+    color: $secundaryColor;
     font-family: $fontRo;
+    font-size: $fontSma;
     font-weight: $fontWe;
-    background-color:$mainColor;   
-    padding: $paddingLg $paddingLg;
-    border-radius: $borderRlg;
-    border:$secundaryColor $borderDo;
-    h2{
-    text-align: $text;
-    font-weight:$fontWe;
-    font-family: $fontRo;
-    background-color:$mainColor;   
-    padding-left: $paddingLg;
+}
+button{
+    background-color: $otroColor2;
+    font-weight: $fontWe;
+    padding: $paddingMd $paddingLg;
     border-top-right-radius: $borderXl;
     border-bottom-left-radius: $borderXl;
-    margin: $marginMd;
-    border:$borderRid;
-    p{
-    font-size: $fontSmd;
-    line-height: 1.5em;
-    color:$keyColor;
-    font-family:$fontRo;
-    }
-    button{
-        background-color: $otroColor2;
-        font-weight: $fontWe;
-        padding: $paddingMd $paddingLg;
-        border-radius: $borderXl;
-    }
+    &:hover{
+        color: $otroColor;
     }
 }
+
 
 //informacion
-
-.info{
+#info{
     display: flex;
+    justify-content: $text;
     padding: $paddingXl;
+    img{
+        width: 25%;
+        margin: $marginXl;
+        background-color: $specialColor;
+    }
+    .img1{
+        background-color: $mainColor;
+    }
 }
-.info-novedades h1{
-    text-align: $text;
-    font-family: $fontRo;
-    font-weight: $fontWe;
-    background-color:$mainColor;   
-    padding: $paddingMd;
-    border-radius:$borderRlg;
-    border:$secundaryColor $borderDo;
-    .tt{
-    font-weight:$fontWe;
-    font-size:$fontXxl;
-    text-align: $text;
-    letter-spacing: 0.3rem;
-    padding: $paddingLg $paddingAu;
-    margin: $marginMd;
-    border-radius: $borderR;
+@media(max-width:1024px){
+    #info{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: $text;
     }
 }
 
-//nosotros
-
-#nosotros-s h1{
+h1 {
     text-align: $text;
     font-family: $fontRo;
     font-weight: $fontWe;
-    background-color:$mainColor;    
+    background-color: $mainColor;
     padding: $paddingMd;
     border-radius: $borderRlg;
-    border:$secundaryColor $borderDo;
-    .tt{
-    font-weight:$fontWe;
-    font-size:$fontXxl;
+    border: $borderDo;
+}
+h2{
+    border: $borderDo;
+    text-align: $text;
+    font-family: $fontRo;
+    font-weight: $fontWe;
+    background-color: $mainColor;
+    padding: $paddingMd;
+    border-radius: $borderRlg;
+}
+p{
+    text-align: $text;
+    font-family: $fontRo;
+    padding: $paddingSm;
+    font-weight: $fontRo;
+}
+.p-color{
+    color: $keyColor;
+}
+.firs-l{
+    &::first-letter{
+        color: $otroColor1;
+        background-color: $otroColor;
+        font-size: $fontXl;
+        padding-bottom: $paddingLg;
+        border: $borderDo;
+        padding: $paddingSm;
+    }
+}
+.spam-2{
+    font-weight: $fontWe;
+    transition: .5s linear;
+    text-shadow: 0 0 20px $secundaryColor;
+    &:hover{
+        color: $secundaryColor;
+    }
+}
+.spam-3{
+    font-weight: $fontWe;
+    transition: .5s linear;
+    text-shadow: 0 0 10px $otroColor;
+    &:hover{
+        color: $otroColor;
+    }
+}
+//nosotros
+
+h1{
+    font-weight: $fontWe;
+    font-size: $fontXxl;
     text-align: $text;
     letter-spacing: 0.3rem;
     padding: $paddingLg $paddingAu;
     margin: $marginMd;
     border-radius: $borderR;
-    }
-    p{
+}
+p{
     font-size: $fontSmd;
     line-height: 1.6em;
     padding-left: $paddingMd;
-    color: $keyColor;
+    color: $otroColor;
     font-family: $fontRo;
     font-weight: $fontWe;
-    text-align: $text;
-    }
+    text-align: $text; 
 }
-
-h2 .galeria-f{
+h2{
+    font-weight: $fontWe;
+    font-size: $fontXxl;
     text-align: $text;
-    font-family: $fontRo;
-    font-weight:$fontWe;
-    background-color:$mainColor;   
-    padding-left: $paddingMd;
-    border-radius: $borderRlg;
-    border:$borderRid;
+    letter-spacing: 0.3rem;
+    padding: $paddingLg $paddingAu;
+    margin: $marginMd;
+    border-radius: $borderR;
 }
-
 .card{
     border: $borderDo;
-    h3{
-    background-color: $otroColor2;
+    background-color: $mainColor;
+}
+h3{
+    color: $secundaryColor;
+    font-weight: $fontWe;
     text-align: $text;
     border-top-left-radius: $borderRmd;
     border-bottom-right-radius: $borderRmd;
-    }
 }

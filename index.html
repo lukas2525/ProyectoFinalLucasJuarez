@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bonitas Nails, contacto, email, imagenes de uñas, formulario, redes sociales">
+    <meta name="author" content="Lucas Juarez">
+    <meta name="keywords" content="BONITAS NAILS, kapping, semipermanetes, soft gel, esculpidas, uñas, lima, pincel, cabina, torno, meline, moldes">
     <title>Bonitas Nails</title>
     <link rel="shortcut icon" href="multimedia/fabicon.jpg" type="image/x-icon">
 
@@ -15,8 +18,11 @@
 </head>
 <body>
     <!-- inicia div -->
-    <div class="anuncio-rgba">
-        <p class="texto-anuncio">Contactos al: 1132596341</p>
+    <div class="anuncio-rgba" id="flex">
+        <p>Contactos al: 1132596341</p>
+        <a href="https://www.gmail.com" target="_blank">
+        <p class="deco">Bonitas-nails@gmail.com</p>
+        </a>
     </div>
     <!-- termina div -->
 
@@ -89,40 +95,38 @@
     <!--inicia contacto-->
     <div>
         <h2 class="titulo-contacto">Contacto</h2>
-        <form action id="contacto">
+        <form>
             <div>
-                <label for="name" class="text-black">Nombre:</label>
-                <input type="text" id="name" placeholder="Lucas Juarez">
+                <label for="name" class="label-black">Nombre:</label>
+                <input type="text" id="name" placeholder="Escribe tu Nombre">
                 </div>
                 <div>
-                <label for="mail" class="text-black">Email:</label>
-                <input type="email" id="mail" placeholder="xxx@zzz.com">
+                <label for="mail" class="label-black">Email:</label>
+                <input type="email" id="mail" placeholder="Escribe tu Email">
             </div>
             <div>
-                <label for="tel" class="text-black">Telefono:</label>
-                <input type="tel" id="tel" placeholder="12345678">
+                <label for="tel" class="label-black">Telefono:</label>
+                <input type="tel" id="tel" placeholder="Escribe tu Telefono">
             </div>
             <div>
-                <label for="mensaje" class="text-black">Deja tu mensaje:</label>
+                <label for="mensaje" class="label-black">Deja tu mensaje:</label>
                 <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <input type="reset" value="cancelar" class="text-black">
-                <input type="submit" value="enviar" class="text-black">
+                <input type="reset" value="cancelar" id="btn">
+                <input type="submit" value="enviar" id="btn">
             </div>
         </form>
     </div>
     <!--ends contacto-->
 
-    <!--inicia main-->
-    <main>
-        <!--inicia map-->
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9309410458372!2d-58.38810998519054!3d-34.73213507181029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd5a33e2c41b%3A0x6e01e2b3e66fec60!2sM.%20A.%20de%20Acevedo%202781%2C%20B1826FMT%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662158222827!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        <!--ends map-->
-    </main>
-    <!--end main-->
+
+    <!--inicia map-->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9309410458372!2d-58.38810998519054!3d-34.73213507181029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd5a33e2c41b%3A0x6e01e2b3e66fec60!2sM.%20A.%20de%20Acevedo%202781%2C%20B1826FMT%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662158222827!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    <!--ends map-->
+
 
     <!--inicia footer-->
     <footer id="footer">
@@ -133,19 +137,20 @@
                 </a>
             </div>
 
-            <h2>Seguinos en Nuestras Redes</h2>
+            <h3>Seguinos en Nuestras Redes</h3>
             <a href="https://instagram.com" target="_blank">
-               <img src="multimedia/instagram.jpg" alt="Seguinos en instagram" height="50" width="50">
+               <img src="multimedia/img-instagram.png" alt="Seguinos en instagram" height="50" width="50">
             </a>
             <a href="https://facebook.com" target="_blank">
-                <img src="multimedia/facebook.png" alt="Seguinos en facebook "height="50" width="50" >
+                <img src="multimedia/img-facebook.png" alt="Seguinos en facebook "height="50" width="50" >
             </a>
             <a href="https://twiter.com" target="_blank">
-                <img src="multimedia/twitter.jpg" alt="Seguinos en twitter "height="50" width="50">
+                <img src="multimedia/img-twitter.png" alt="Seguinos en twitter "height="50" width="50">
             </a>
         </div>
    </footer>
    <!--ends footer-->
+   
 
    <!-- js y bs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

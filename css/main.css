@@ -15,21 +15,16 @@ body {
   margin: 5px;
   border: double;
 }
-
-p {
-  color: black;
-  font-weight: bold;
-}
-p .texto-anucio {
-  font-weight: bold;
-  color: black;
+.anuncio-rgba p {
+  color: gray;
+  font-weight: "Roboto", sans-serif;
+  font-size: small;
   margin: 5px 5px;
 }
 
-h1 h2 h3 {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+#flex {
+  display: flex;
+  justify-content: start;
 }
 
 .tt {
@@ -62,15 +57,6 @@ h1 h2 h3 {
   font-weight: bold;
 }
 
-h2 {
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-  padding: 2px auto;
-  border-radius: 0.5rem;
-  margin: 5px;
-}
-
 .titulo-contacto {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.438);
@@ -81,22 +67,52 @@ h2 {
   border: double;
 }
 
-form div {
-  margin-top: 5px;
-  margin-bottom: 5px;
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(124, 124, 124, 0.214);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px;
 }
-form div .text-black {
-  color: black;
+form label {
+  font-size: 500;
+  display: block;
+  width: 100%;
+}
+form .label-black {
   font-weight: bold;
 }
-
-#contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5px;
+form input, form textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: larger;
+}
+form textarea {
+  resize: vertical;
+  max-height: 100px;
+  min-height: 100px;
+}
+form #btn {
+  background: rgba(128, 128, 128, 0.438);
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+form #btn:hover {
+  color: blueviolet;
 }
 
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
 div .map {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -111,6 +127,7 @@ div .map {
   border: double;
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 #footer h2 {
   font-weight: bold;
@@ -129,7 +146,7 @@ div .map {
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.438);
   padding: 10px 10px;
-  border-radius: 2px;
+  border-radius: 0.5rem;
   border: double;
 }
 
@@ -149,107 +166,133 @@ div .map {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+#contenedor .galeria figcaption {
+  font-size: 500;
+  color: black;
+  font-weight: 500;
+  padding: 2px;
+}
 #contenedor .galeria button {
   background-color: pink;
   font-weight: bold;
   padding: 5px 5px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 #contenedor .galeria button:hover {
-  color: rgba(0, 110, 255, 0.87);
-}
-#contenedor .novedades {
-  padding: 5px;
-}
-#contenedor .novedades h1 p {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-weight: 600;
-  color: gray;
-}
-#contenedor .galeria figure {
-  text-align: center;
-  background-color: rgba(128, 128, 128, 0.438);
-  padding: 10px 10px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-#contenedor .galeria figure img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-#contenedor .galeria figure figcaption {
-  font-size: larger;
-  color: black;
-  font-weight: bolder;
-  padding: 10px;
-  background-color: rgba(128, 128, 128, 0.438);
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.seccion {
-  display: flex;
-}
-.seccion figure {
-  text-align: center;
-  background-color: rgba(128, 128, 128, 0.438);
-  padding-bottom: 5px;
-  margin: 2px;
-  border: ridge;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
+  color: blueviolet;
 }
 
 #nuestros-trabajos h1 {
+  background-color: rgba(128, 128, 128, 0.438);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.438);
   padding: 10px 10px;
-  border-radius: 2px;
-  border: black double;
+  border-radius: 0.5rem;
+  border: double;
 }
-#nuestros-trabajos h1 h2 {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  background-color: rgba(128, 128, 128, 0.438);
-  padding-left: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin: 5px;
-  border: ridge;
-}
-#nuestros-trabajos h1 h2 p {
+
+.card-smd {
   font-size: 1.2em;
-  line-height: 1.5em;
-  color: gray;
-  font-family: "Roboto", sans-serif;
 }
-#nuestros-trabajos h1 h2 button {
+
+.p-letters {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: bold;
+}
+
+button {
   background-color: pink;
   font-weight: bold;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+button:hover {
+  color: blueviolet;
 }
 
-.info {
+#info {
   display: flex;
+  justify-content: center;
   padding: 30px;
 }
+#info img {
+  width: 25%;
+  margin: 20px;
+  background-color: rgba(124, 124, 124, 0.214);
+}
+#info .img1 {
+  background-color: rgba(128, 128, 128, 0.438);
+}
 
-.info-novedades h1 {
+@media (max-width: 1024px) {
+  #info {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.438);
   padding: 5px;
   border-radius: 2px;
-  border: black double;
+  border: double;
 }
-.info-novedades h1 .tt {
+
+h2 {
+  border: double;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.438);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  font-weight: "Roboto", sans-serif;
+}
+
+.p-color {
+  color: gray;
+}
+
+.firs-l::first-letter {
+  color: white;
+  background-color: blueviolet;
+  font-size: x-large;
+  padding-bottom: 10px;
+  border: double;
+  padding: 2px;
+}
+
+.spam-2 {
+  font-weight: bold;
+  transition: 0.5s linear;
+  text-shadow: 0 0 20px black;
+}
+.spam-2:hover {
+  color: black;
+}
+
+.spam-3 {
+  font-weight: bold;
+  transition: 0.5s linear;
+  text-shadow: 0 0 10px blueviolet;
+}
+.spam-3:hover {
+  color: blueviolet;
+}
+
+h1 {
   font-weight: bold;
   font-size: xx-large;
   text-align: center;
@@ -259,49 +302,34 @@ div .map {
   border-radius: 0.5rem;
 }
 
-#nosotros-s h1 {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.438);
-  padding: 5px;
-  border-radius: 2px;
-  border: black double;
-}
-#nosotros-s h1 .tt {
-  font-weight: bold;
-  font-size: xx-large;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  padding: 10px auto;
-  margin: 5px;
-  border-radius: 0.5rem;
-}
-#nosotros-s h1 p {
+p {
   font-size: 1.2em;
   line-height: 1.6em;
   padding-left: 5px;
-  color: gray;
+  color: blueviolet;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
-h2 .galeria-f {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+h2 {
   font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.438);
-  padding-left: 5px;
-  border-radius: 2px;
-  border: ridge;
+  font-size: xx-large;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 10px auto;
+  margin: 5px;
+  border-radius: 0.5rem;
 }
 
 .card {
   border: double;
+  background-color: rgba(128, 128, 128, 0.438);
 }
-.card h3 {
-  background-color: pink;
+
+h3 {
+  color: black;
+  font-weight: bold;
   text-align: center;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -353,10 +381,10 @@ h2 .galeria-f {
   transition: background-size 0.3s;
 }
 #nav ul li a:hover {
-  color: blue;
+  color: rgba(0, 110, 255, 0.87);
 }
 #nav ul li a:hover {
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   background-size: 100% 2px;
 }/*# sourceMappingURL=main.css.map */
